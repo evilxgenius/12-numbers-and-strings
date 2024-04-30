@@ -7,7 +7,7 @@ const userNumbers = (length = 5) => {
     let input;
 
     do {
-        input = prompt('5 digits number');
+        input = prompt(`${length}-digit(s) number`);
 
         if (input === null) return;
     } while (isNaN(input) || input.length !== length)
